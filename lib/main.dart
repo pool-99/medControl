@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:met_control/screens/welcome.dart';
+import 'package:met_control/screens/terminos.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,10 +29,10 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     // Iniciar temporizador de 3 segundos
     Timer(
-      Duration(seconds: 4),
+      Duration(seconds: 20),
       () => Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => WelcomePage()),
+        MaterialPageRoute(builder: (context) => Terminos()),
       ),
     );
   }
@@ -82,4 +83,3 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
-
